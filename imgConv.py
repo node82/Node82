@@ -1,4 +1,5 @@
 #converts .jfif images to .jpg 
+#convert .webp to jpg
 import os
 from PIL import Image
 
