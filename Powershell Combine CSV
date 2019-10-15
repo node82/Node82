@@ -1,0 +1,15 @@
+$getFirstLine = $true
+
+get-childItem "C:\Users\Node82\Desktop\*.csv" | foreach {
+    $filePath = $_
+
+    $lines = Get-Content $filePath  
+    $linesToWrite = switch($getFirstLine) {
+           $true  {$lines}
+           $false {$lines | Select -Skip 1}
+
+    }
+
+    $getFirstLine = $false
+    Add-Content "C:\Users\Node82\Desktop\final.csv" $linesToWrite
+    }
