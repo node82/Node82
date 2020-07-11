@@ -7,9 +7,7 @@ print("$date[weekday], $date[month] $date[mday], $date[year]");
 
 <!-- copyright --> 
 
-<? php
-  echo "© " date("Y")
-?>
+&copy; <?php echo date("Y"); ?>
 <!--
 The following characters are recognized in the format parameter string
 format character	Description	Example returned values
