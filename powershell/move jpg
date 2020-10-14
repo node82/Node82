@@ -1,0 +1,8 @@
+$source = "C:\Users\node82\Desktop\_Reaction"
+$dest = "C:\Users\node82\Desktop\NewReaction"
+GCI $source -Include "*.jpg" -Recurse |
+    % {
+        $path = $dest + ($_.DirectoryName).substring($source.length)
+        if (!(Test-Path $path)) {New-Item $path -type directory -Force}
+        Move-Item -Path $_.FullName -Destination "$path\" -Force
+}
