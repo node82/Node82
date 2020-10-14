@@ -1,0 +1,1 @@
+Get-Service | ConvertTo-HTML -Property Name, Status > C:\services.htm 
