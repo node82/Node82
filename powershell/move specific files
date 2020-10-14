@@ -1,0 +1,7 @@
+$Files = Get-Content C:\Users\node82\Desktop\HasImage.csv
+$Source = "C:\Users\node82\Desktop\New"
+$Destination = "C:\Users\node82\Desktop\Final"
+
+foreach ($SourceFile in $Files) {
+Move-Item "$Source\$SourceFile" -Destination $Destination
+}
