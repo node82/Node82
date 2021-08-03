@@ -10,4 +10,4 @@ strTable = strTable+"</table></html>"
 hs = open("asciiCharHTMLTable.html", 'w')
 hs.write(strTable)
  
-print strTable
+print(strTable)
