@@ -1,3 +1,7 @@
+: uses inkscape to convert a svg to a png
+: drop and execute in folder where svg graphics are
+
+
 @Echo off
 setlocal ENABLEDELAYEDEXPANSION
 
