@@ -1,5 +1,6 @@
 : uses inkscape to convert a svg to a png
 : drop and execute in folder where svg graphics are
+: can set dpi on cmd when prompted
 
 
 @Echo off
