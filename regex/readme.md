@@ -1,0 +1,2 @@
+
+(?:<style.+?>.+?</style>|<script.+?>.+?</script>|<(?:!|/?[a-zA-Z]+).*?/?>)      // html
