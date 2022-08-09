@@ -1,0 +1,4 @@
+py -m pip install --upgrade pip
+py -m pip install requirements.txt
+
+doskey /macros:all
