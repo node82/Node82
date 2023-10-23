@@ -1,0 +1,1 @@
+ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H "Host: FUZZ.acmeitsupport.com" -u http://10.10.202.158 -fs {size}
